@@ -61,8 +61,8 @@ county.count <- parcels %>%
 county.count <- rename(county.count, "ntotal"="n")
 
 # read in a better df of nbhds matched to counties
-n2c <- read.csv("nbhd2county.csv") %>% 
-  group_by(county, nbhd)
+#n2c <- read.csv("nbhd2county.csv") %>% 
+#  group_by(county, nbhd)
 
 # recode factors from the school and commute data to match the housing data
 data <- mutate(data, 
